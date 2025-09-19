@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   XÂY DỰNG ỨNG DỤNG CHAT CLIENT-SERVER SỬ DỤNG GIAO THỨC TCP
+   ỨNG DỤNG DỰ BÁO THỜI TIẾT ONLINE 
 </h2>
 <div align="center">
     <p align="center">
@@ -19,7 +19,6 @@
 
 </div>
 
-📖 1. Giới thiệu hệ thống
 ## 📖 1. Giới thiệu hệ thống
 WeatherApp là ứng dụng **Client - Server sử dụng giao thức UDP** để cung cấp thông tin thời tiết cho người dùng:
 - Xem **thời tiết hiện tại** của thành phố.
