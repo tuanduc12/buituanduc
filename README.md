@@ -8,10 +8,10 @@
 </h2>
 <div align="center">
     <p align="center">
-      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/X%C3%8…O%20TH%E1%BB%A8C%20TCP/%E1%BA%A2nh/aiotlab_logo.png?raw=true" alt="AIoTLab Logo" width="170"/>
-      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/X%C3%8…AO%20TH%E1%BB%A8C%20TCP/%E1%BA%A2nh/fitdnu_logo.png?raw=true" alt="FITDNU Logo" width="180"/>
-      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/X%C3%8…0GIAO%20TH%E1%BB%A8C%20TCP/%E1%BA%A2nh/dnu_logo.png?raw=true" alt="DaiNam University Logo" width="200"/>
-    </p>
+        <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/aiotlab_logo.png?raw=true" alt="AIoTLab Logo" width="170"/>
+     <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/fitdnu_logo.png?raw=true" alt="AIoTLab Logo" width="170"/>
+    <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/dnu_logo.png?raw=true" alt="DNU Logo" width="170"/>
+
 
 [![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
 [![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20T…he-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
@@ -19,79 +19,62 @@
 
 </div>
 
+📖 1. Giới thiệu hệ thống
+## 📖 1. Giới thiệu hệ thống
+WeatherApp là ứng dụng **Client - Server sử dụng giao thức UDP** để cung cấp thông tin thời tiết cho người dùng:
+- Xem **thời tiết hiện tại** của thành phố.
+- Xem **dự báo 5 ngày** (dạng văn bản + biểu đồ cột).
+- Xem lại **lịch sử tra cứu**.
 
-🏗 Kiến trúc hệ thống
-Server (WeatherServerMulti.java)
+Ứng dụng gồm 2 thành phần:
+- **WeatherServerMulti**: Server UDP trả lời yêu cầu thời tiết từ client.
+- **WeatherClientGUIFull**: Client GUI (Java Swing) cho phép người dùng nhập tên thành phố và hiển thị dữ liệu.
 
-Nhận request từ nhiều client thông qua UDP.
-Gọi OpenWeatherMap API để lấy dữ liệu thời tiết hiện tại và dự báo 5 ngày.
-Tính toán trung bình nhiệt độ mỗi ngày từ dữ liệu forecast (3h/điểm).
-Ghi lại lịch sử yêu cầu vào file history.txt.
-Client (WeatherClientGUIFull.java)
+---
 
-Gửi yêu cầu CURRENT:city hoặc FORECAST:city tới server.
-Hiển thị dữ liệu thời tiết hiện tại (nhiệt độ, mô tả, icon).
-Vẽ biểu đồ nhiệt độ 5 ngày từ dữ liệu dự báo.
-🌐 Giới thiệu
-Đây là đồ án môn học lập trình mạng với yêu cầu xây dựng ứng dụng dự báo thời tiết trực tuyến sử dụng giao thức UDP.
-Ứng dụng cho phép nhiều client cùng lúc gửi yêu cầu tới server để lấy thông tin thời tiết từ API OpenWeatherMap và hiển thị trong giao diện Java Swing.
+## 🔧 2. Công nghệ sử dụng
+- **Java SE 11+**: Ngôn ngữ lập trình chính.  
+- **Java Swing**: Xây dựng giao diện người dùng.  
+- **UDP DatagramSocket**: Giao tiếp client ↔ server.  
+- **JFreeChart**: Hiển thị biểu đồ cột dự báo 5 ngày.  
+- **OpenWeatherMap API** (hoặc dữ liệu mô phỏng): nguồn dữ liệu thời tiết.  
 
-🏗 Kiến trúc hệ thống
-Server (WeatherServerMulti.java)
+---
 
-Nhận request từ nhiều client thông qua UDP.
-Gọi OpenWeatherMap API để lấy dữ liệu thời tiết hiện tại và dự báo 5 ngày.
-Tính toán trung bình nhiệt độ mỗi ngày từ dữ liệu forecast (3h/điểm).
-Ghi lại lịch sử yêu cầu vào file history.txt.
-Client (WeatherClientGUIFull.java)
-
-Gửi yêu cầu CURRENT:city hoặc FORECAST:city tới server.
-Hiển thị dữ liệu thời tiết hiện tại (nhiệt độ, mô tả, icon).
-Vẽ biểu đồ nhiệt độ 5 ngày từ dữ liệu dự báo.
-Cho phép người dùng xem lại lịch sử yêu cầu.
-HistoryManager.java
-
-Quản lý đọc/ghi file lịch sử (thread-safe).
-⚙️ Chức năng chính
- Dự báo thời tiết hiện tại (nhiệt độ, mô tả, icon).
- Biểu đồ dự báo trung bình nhiệt độ 5 ngày.
- Lưu lịch sử truy vấn (ngày giờ, thành phố, loại yêu cầu).
- Hỗ trợ nhiều client đồng thời.
- Giao diện đồ họa (GUI) thân thiện bằng Java Swing.
-🚀 Cách cài đặt & chạy
-Yêu cầu
-Java JDK 11+ (có hỗ trợ module java.desktop).
-Kết nối Internet để gọi OpenWeather API.
-API key hợp lệ từ OpenWeatherMap.
-Các bước
-Clone hoặc tải source code về máy.
-Đặt API key của bạn vào file WeatherServerMulti.java:
-private static final String API_KEY = "YOUR_API_KEY";
-3.Biên dịch:
-
-javac --add-modules java.desktop *.java
-
-4.Chạy server:
-
-java --add-modules java.desktop WeatherServerMulti
-
-5.Chạy client (mở nhiều cửa sổ client nếu muốn):
-
-java --add-modules java.desktop WeatherClientGUIFull
-
-📊 Minh họa giao diện
-
-Ô nhập thành phố + nút thao tác.
-
-TextArea hiển thị kết quả.
-
-Icon thời tiết (lấy từ OpenWeather).
-
-Biểu đồ dự báo 5 ngày (vẽ trong GUI).
+🚀 3. Hình ảnh các chức năng
+    <div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7026962704990_b8904a54d1c430f098ab743bf21438a7.jpg?raw=true" alt="Ảnh 1" width="570"/>
+  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7026963764760_3f4944e734b62cb0939ede1a7610539c.jpg?raw=true" alt="Ảnh 2" width="570"/>
+  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7027149607276_b15c295077bd3698d5936161615a2b91.jpg?raw=true" alt="Ảnh 3" width="570"/>
+</div>
 
 
 
-### [Khoá 16](./docs/projects/K16/README.md)
+## 📝 3. Hướng dẫn cài đặt và sử dụng
+### ⚙️ Cài đặt
+1. Clone hoặc tải source code về máy.  
+2. Mở project trong IDE (IntelliJ / Eclipse / NetBeans).  
+3. Thêm thư viện **JFreeChart** vào project:  
+   - Nếu dùng Maven:  
+     ```xml
+     <dependency>
+         <groupId>org.jfree</groupId>
+         <artifactId>jfreechart</artifactId>
+         <version>1.5.4</version>
+     </dependency>
+     ```
+   - Nếu không dùng Maven: tải file `.jar` JFreeChart và add vào `classpath`.
+
+### ▶️ Sử dụng
+1. Chạy **WeatherServerMulti.java** (server) → lắng nghe tại `127.0.0.1:8888`.  
+2. Chạy **WeatherClientGUIFull.java** (client).  
+3. Nhập tên thành phố → bấm **🌤 Hiện tại** hoặc **📊 5 ngày** để xem dữ liệu.  
+4. Có thể mở phần **📜 Lịch sử** để xem lại các lần tra cứu trước.  
+
+---
+Họ tên: Bùi Tuấn Đức
+Lớp: CNTT 16-01
+Email: tuanduc1282004@gmail.com
 
 ## 📝 4. License
 
