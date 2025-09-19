@@ -1,0 +1,7 @@
+[2025-09-19 08:31:01] hanoi -> CURRENT|hanoi|28.32|mây cụm|04d
+[2025-09-19 08:31:03] hanoi -> FORECAST
+[2025-09-19 08:33:04] hanoi -> CURRENT|hanoi|29.91|mây cụm|04d
+[2025-09-19 08:33:05] hanoi -> FORECAST
+[2025-09-19 08:33:14] hanoi -> FORECAST
+[2025-09-19 08:35:15] hanoi -> CURRENT|hanoi|29.91|mây cụm|04d
+[2025-09-19 08:35:17] hanoi -> FORECAST
