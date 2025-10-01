@@ -32,10 +32,16 @@ Học phần trang bị cho người học những kiến thức nền tảng c�
 ---
 
 ## 🚀 3. Hình ảnh các chức năng
-<div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7026962704990_b8904a54d1c430f098ab743bf21438a7.jpg?raw=true" alt="Ảnh 1" width="570"/>
-  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7026963764760_3f4944e734b62cb0939ede1a7610539c.jpg?raw=true" alt="Ảnh 2" width="570"/>
-  <img src="https://github.com/tuanduc12/buituanduc/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/z7027149607276_b15c295077bd3698d5936161615a2b91.jpg?raw=true" alt="Ảnh 3" width="570"/>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/1.png?raw=true" alt="Ảnh 1" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/12.png?raw=true" alt="Ảnh 2" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/13.jpg?raw=true" alt="Ảnh 3" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/3.png?raw=true" alt="Ảnh 4" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/5.png?raw=true" alt="Ảnh 5" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/7.png?raw=true" alt="Ảnh 6" width="400"/>
+  <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/8.png?raw=true" alt="Ảnh 7" width="400"/>
+   <img src="https://github.com/tuanduc12/dubaothoitiet1601/blob/main/LTM-Du-Bao-Thoi-Tiet-Online-main/anh/22.jpg?raw=true" alt="Ảnh 22" width="400">
+
 </div>
 
 
